@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_bus_station_info_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_bus_number_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="#ff0000" />
+
+        <ImageView
+            android:id="@+id/im_bus_2"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/im_bus_dash_left_2"
+                android:layout_width="11dp"
+                android:layout_height="11dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/bus_line_before" />
+
+            <ImageView
+                android:id="@+id/im_bus_station_2"
+                android:layout_width="11dp"
+                android:layout_height="11dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/bus_line_before" />
+
+            <ImageView
+                android:id="@+id/im_bus_dash_right_2"
+                android:layout_width="11dp"
+                android:layout_height="11dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/bus_line_before" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_bus_station_order_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="1"
+            android:text="1"
+            android:textAlignment="center"
+            android:textColor="#00ffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_bus_station_name_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="1"
+            android:text="关东园五路"
+            android:textAlignment="center"
+            android:textColor="#00ffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_bus_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="#ff0000" />
+
+        <ImageView
+            android:id="@+id/im_bus"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/im_bus_dash_left"
+                android:layout_width="11dp"
+                android:layout_height="11dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/bus_line_before" />
+
+            <ImageView
+                android:id="@+id/im_bus_station"
+                android:layout_width="11dp"
+                android:layout_height="11dp"
+                android:layout_gravity="center_horizontal" />
+
+            <ImageView
+                android:id="@+id/im_bus_dash_right"
+                android:layout_width="11dp"
+                android:layout_height="11dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/bus_line_before" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_bus_station_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="1"
+            android:text="1"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_bus_station_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="1"
+            android:text="关东园五路"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:focusable="true"/>
+    </LinearLayout>
+</LinearLayout>
