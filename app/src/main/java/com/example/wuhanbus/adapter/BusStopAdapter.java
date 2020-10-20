@@ -79,13 +79,11 @@ public class BusStopAdapter extends BaseAdapter<BusStopInfo.DataBean,BusStopAdap
         String[] busState = busStates.trim().split("\\|");
         int runningNum = Integer.parseInt(busState[0]);
         int arrivedNum = Integer.parseInt(busState[1]);
-        if (0 != runningNum) {// RUNNING
-            setProperties(holder,null,"",mContext.getDrawable(R.drawable.bus_move),busState[0]);
-        } else if (0 != arrivedNum) {// ARRIVED
-            setProperties(holder,mContext.getDrawable(R.drawable.bus_stop),busState[1],null,"");
-        } else {// No Bus
-            setProperties(holder,null,"",null,"");
-        }
+        setProperties(holder,
+                0 != arrivedNum?mContext.getDrawable(R.drawable.bus_stop):null,
+                1 < arrivedNum? busState[1]:"",
+                0 != runningNum? mContext.getDrawable(R.drawable.bus_move):null,
+                1 < runningNum? busState[0]:"");
         //holder.mImBus.setImageResource(R.drawable.bus_move_norm);
         holder.mImBusStation.setImageResource(R.drawable.bus_move_normal);
 
