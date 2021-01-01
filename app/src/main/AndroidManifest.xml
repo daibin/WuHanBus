@@ -24,7 +24,8 @@
         </receiver>
 
         <activity android:name=".activity.MainActivity"></activity>
-        <activity android:name=".activity.FavoriteActivity">
+        <activity android:name=".activity.FavoriteActivity"
+            android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

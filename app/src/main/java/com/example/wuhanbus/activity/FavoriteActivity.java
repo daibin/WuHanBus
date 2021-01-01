@@ -122,8 +122,8 @@ public class FavoriteActivity extends BaseActivity implements ILoadDataView<BusS
     }
 
     @Override
-    protected void onPause() {
-        super.onPause();
+    protected void onDestroy() {
+        super.onDestroy();
         handler.removeMessages(UPDATE);
         isFreshing = false;
     }

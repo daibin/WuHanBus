@@ -202,15 +202,8 @@ public class MainActivity extends BaseActivity implements ILoadDataView<BusStopI
     }
 
     @Override
-    protected void onStop() {
-        super.onStop();
-        handler.removeMessages(UPDATE);
-        isFreshing = false;
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
+    protected void onDestroy() {
+        super.onDestroy();
         handler.removeMessages(UPDATE);
         isFreshing = false;
     }
