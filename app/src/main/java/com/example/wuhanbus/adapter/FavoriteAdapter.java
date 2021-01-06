@@ -11,6 +11,8 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import androidx.cardview.widget.CardView;
+
 import com.example.wuhanbus.MyApplication;
 import com.example.wuhanbus.R;
 import com.example.wuhanbus.bean.BusStopInfo;
@@ -202,8 +204,8 @@ public class FavoriteAdapter extends BaseAdapter<List<BusStopInfo>,FavoriteAdapt
         TextView wTvNeedTime;
         @BindView(R.id.w_tv_numStopAndDistance)
         TextView wTvNumStopAndDistance;
-        @BindView(R.id.ll_recycler_widget_item_layout)
-        LinearLayout llRecyclerWidgetItemLayout;
+        @BindView(R.id.cv_recycler_widget_item_layout)
+        CardView cvRecyclerWidgetItemLayout;
 
         public ViewHolder(View view){
             super(view);
